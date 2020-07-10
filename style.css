@@ -1,0 +1,33 @@
+/*BULMA is used*/ 
+form {
+  display: flex;
+  padding: 10px;
+}
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#e0e0e0;
+}
+.input {
+  margin-right: 10px;
+  color:#0e0e0e;
+}
+.frame {
+  width: 40vw;
+  max-width: 400px;
+}
+.header {
+  display: inline;
+  text-align: center;
+  color:#F90738;
+}
+.list-wrapper {
+  max-height: 200px;
+  overflow-y: auto;
+  padding:10px;
+  color:blue;
+  font-size:1.1rem;
+  background-color:#fffdf1;
+}
