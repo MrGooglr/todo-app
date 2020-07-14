@@ -3,7 +3,27 @@ form {
   display: flex;
   padding: 10px;
 }
+.Title {
+  font-size: calc(10px + 2vmin);
+  color: white;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  text-align:center;
+  justify-content: center;
+  padding: 0.2em;
+  background-color: rgb(192, 45, 26);
+  box-shadow: 2px 5px 15px rgba(0,0,0,0.2);
+}
+.Title-Subtitle {
+  font-size: calc(10px + 2vmin);
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+  padding-bottom: 1em;
+}
 .wrapper {
+  padding-top:1em;
+  padding-bottom:1em;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -21,13 +41,14 @@ form {
 .header {
   display: inline;
   text-align: center;
-  color:#F90738;
+  color:rgb(192, 45, 26);
 }
 .list-wrapper {
   max-height: 200px;
   overflow-y: auto;
   padding:10px;
-  color:blue;
+  color:rgb(0, 0, 255);
+  font-style:bold;
   font-size:1.1rem;
   background-color:#fffdf1;
 }

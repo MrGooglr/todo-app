@@ -1,6 +1,6 @@
 function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}class App extends React.Component {constructor(...args) {super(...args);_defineProperty(this, "state",
     {
-      tasks: ['task 1', 'task 2', 'task 3'] });_defineProperty(this, "handleSubmit",
+      tasks: ['Auto Task 1', 'Auto Task 2', 'Auto Task 3'] });_defineProperty(this, "handleSubmit",
 
 
     task => {
@@ -15,11 +15,19 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
 
   render() {
     return (
+      React.createElement("div", { className: "" },
+      React.createElement("div", null,
+      React.createElement(Title, null)),
+
       React.createElement("div", { className: "wrapper" },
       React.createElement("div", { className: "card frame" },
       React.createElement(Header, { numTodos: this.state.tasks.length }),
       React.createElement(TodoList, { tasks: this.state.tasks, onDelete: this.handleDelete }),
-      React.createElement(SubmitForm, { onFormSubmit: this.handleSubmit }))));
+      React.createElement(SubmitForm, { onFormSubmit: this.handleSubmit }))),
+
+
+      React.createElement("div", null,
+      React.createElement(Footer, null))));
 
 
 
@@ -64,6 +72,26 @@ const Header = props => {
 
 };
 
+const Footer = () => {
+  return (
+    React.createElement("div", { className: "Title" },
+    React.createElement("header", null,
+    React.createElement("h2", null, "TODO App"))));
+
+
+
+};
+
+const Title = () => {
+  return (
+    React.createElement("div", { className: "Title" },
+    React.createElement("header", null,
+    React.createElement("h1", null, "TODO App"),
+    React.createElement("h3", { className: "Title-Subtitle" }, "Aniket Narayan"))));
+
+
+
+};
 
 const TodoList = props => {
   const todos = props.tasks.map((todo, index) => {
